@@ -96,3 +96,16 @@ progressBarNode.onclick = function(e){
     music.currentTime = percent * music.duration
     progressNowNode.style.width = percent * 100 + '%'
 }
+
+music.shouldUpdate = true
+music.ontimeupdate = function(){
+  var _this = this
+  if(_this.shouldUpdate) {
+     //do something
+     console.log('update')
+     _this.shouldUpdate = false
+    setTimeout(function(){
+      _this.shouldUpdate = true
+    }, 1000)
+  }
+}
