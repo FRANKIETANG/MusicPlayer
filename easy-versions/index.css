@@ -1,4 +1,8 @@
 .musicbox {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     font-size: 16px;
     color: #7FB64E;
     border: 1px solid #7FB64E;
