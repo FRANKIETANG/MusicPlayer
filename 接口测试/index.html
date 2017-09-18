@@ -121,6 +121,8 @@
 
         function get(url, data, callback, dataType) {
             url += '?' + Object.keys(data).map(function (key) {
+                console.log(key)
+                console.log(data)
                 return key + '=' + data[key]
             }).join('&')
 
